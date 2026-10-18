@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Sunday, Joel 🩷🩵</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  background: linear-gradient(145deg,
+    #fff0f6, #f9e5f2, #e5f2ff, #f6f3ff);
+  color: #78688f;
+  overflow-x: hidden;
+}
+
+main {
+  width: min(100% - 32px, 650px);
+  margin: auto;
+  padding: 42px 0;
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #ae8bb9;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(35px, 7vw, 57px);
+  line-height: 1.2;
+  color: #88649b;
+  margin: 20px 0 8px;
+}
+
+.name {
+  color: #d38fb7;
+  font-family: 'Playfair Display', serif;
+  font-size: 29px;
+  margin: 12px 0 22px;
+}
+
+.intro {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #9284a5;
+}
+
+.bouquet-card {
+  max-width: 410px;
+  margin: 25px auto;
+  padding: 10px;
+  border: 1px solid #ffffffd9;
+  border-radius: 26px;
+  background: #ffffff85;
+  box-shadow: 0 15px 45px #bda7d538;
+  animation: float 4s ease-in-out infinite;
+}
+
+.bouquet {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 19px;
+}
+
+.caption {
+  padding: 17px 8px 13px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #9876a8;
+}
+
+.caption small {
+  display: block;
+  margin-top: 7px;
+  font: 12px 'DM Sans', sans-serif;
+  color: #ac9bb9;
+}
+
+.note {
+  max-width: 470px;
+  margin: 28px auto 0;
+  padding: 28px 23px;
+  background: #ffffffa8;
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 35px #c9afd52b;
+  animation: fadeIn 1.2s ease both;
+}
+
+.note h2 {
+  font-family: 'Playfair Display', serif;
+  color: #d18db7;
+  font-size: 27px;
+  margin-bottom: 18px;
+}
+
+.note p {
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 9px 0;
+}
+
+.warning {
+  color: #a47ca9;
+  font-weight: 600;
+}
+
+.signoff {
+  color: #c487b1;
+  margin-top: 18px !important;
+}
+
+footer {
+  margin-top: 25px;
+  color: #a996b9;
+  font-size: 12px;
+}
+
+.petal {
+  position: fixed;
+  top: -30px;
+  z-index: 5;
+  pointer-events: none;
+  animation: fall linear forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0.15;
+  }
+}
+
+@media (max-width: 480px) {
+  main { padding-top: 32px; }
+  .bouquet { height: 310px; }
+  .note { padding: 24px 18px; }
+}
+</style>
+</head>
+
+<body>
+<main>
+  <p class="eyebrow">A LITTLE SUNDAY GIFT ♡</p>
+
+  <h1>Happy Sunday<br><span style="color:#d38fb7">– Funday!</span></h1>
+
+  <p class="name">For Joel 🩵</p>
+
+  <p class="intro">
+    A little bouquet to brighten your Sunday
+    and hopefully bring a smile to your face. 🌷
+  </p>
+
+  <section class="bouquet-card">
+    <img
+      class="bouquet"
+      src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=85"
+      alt="A beautiful bouquet of flowers"
+    >
+    <div class="caption">
+      A bouquet just for you
+      <small>Picked with a little thought and lots of affection ♡</small>
+    </div>
+  </section>
+
+  <section class="note">
+    <h2>A little note for you 💌</h2>
+
+    <p>
+      May your Sundays be filled with happiness,
+      laughter, and all the little things that make you smile. 🩷
+    </p>
+
+    <p class="warning">
+      And if you continue your drinking fun every day,
+      I will finish you! 😤😂
+    </p>
+
+    <p class="signoff">
+      Have the loveliest Sunday, Joel ♡
+    </p>
+  </section>
+
+  <footer>
+    Sent with flowers, affection & a tiny warning 🌸
+  </footer>
+</main>
+
+<script>
+const petals = ["🌸", "🩷", "🩵", "🌷"];
+
+function createPetal() {
+  const petal = document.createElement("span");
+  petal.className = "petal";
+  petal.textContent =
+    petals[Math.floor(Math.random() * petals.length)];
+
+  petal.style.left = Math.random() * 100 + "vw";
+  petal.style.fontSize = (12 + Math.random() * 13) + "px";
+  petal.style.animationDuration = (7 + Math.random() * 6) + "s";
+
+  document.body.appendChild(petal);
+  setTimeout(() => petal.remove(), 13000);
+}
+
+setInterval(createPetal, 800);
+</script>
+</body>
+</html>
+
