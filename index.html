@@ -4,191 +4,231 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Sunday, Joel 🩷🩵</title>
+<title>I Miss U, Love — For Kallu ♡</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
-  font-family: 'DM Sans', sans-serif;
-  background: linear-gradient(145deg,
-    #fff0f6, #f9e5f2, #e5f2ff, #f6f3ff);
-  color: #78688f;
   overflow-x: hidden;
+  font-family: 'DM Sans', sans-serif;
+  color: #79658f;
+  background: linear-gradient(
+    140deg,
+    #fff0f6 0%,
+    #fbe2f0 32%,
+    #e5f2ff 70%,
+    #f5edff 100%
+  );
 }
 
 main {
-  width: min(100% - 32px, 650px);
+  width: min(100% - 32px, 700px);
   margin: auto;
-  padding: 42px 0;
+  padding: 48px 0 35px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .eyebrow {
   font-size: 11px;
-  letter-spacing: 4px;
-  color: #ae8bb9;
   font-weight: 600;
+  letter-spacing: 4px;
+  color: #b28aba;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(35px, 7vw, 57px);
-  line-height: 1.2;
-  color: #88649b;
-  margin: 20px 0 8px;
+  font-size: clamp(42px, 9vw, 76px);
+  line-height: 1.12;
+  color: #88669e;
+  margin: 24px 0 10px;
+}
+
+h1 span {
+  color: #dc91b9;
+  font-style: italic;
 }
 
 .name {
-  color: #d38fb7;
   font-family: 'Playfair Display', serif;
-  font-size: 29px;
-  margin: 12px 0 22px;
+  color: #87aeda;
+  font-size: clamp(27px, 5vw, 36px);
+  margin: 17px 0;
 }
 
 .intro {
-  font-size: 14px;
-  line-height: 1.8;
-  color: #9284a5;
+  max-width: 440px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #9182a4;
 }
 
 .bouquet-card {
-  max-width: 410px;
-  margin: 25px auto;
-  padding: 10px;
+  width: min(100%, 440px);
+  margin: 30px auto 27px;
+  padding: 11px;
   border: 1px solid #ffffffd9;
-  border-radius: 26px;
-  background: #ffffff85;
-  box-shadow: 0 15px 45px #bda7d538;
+  border-radius: 28px;
+  background: #ffffff8c;
+  box-shadow: 0 18px 55px #bba1d640;
   animation: float 4s ease-in-out infinite;
 }
 
 .bouquet {
   display: block;
   width: 100%;
-  height: 360px;
+  height: 390px;
   object-fit: cover;
-  border-radius: 19px;
+  object-position: center;
+  border-radius: 20px;
+  background: #fceaf5;
 }
 
 .caption {
   padding: 17px 8px 13px;
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  color: #9876a8;
+  font-size: 22px;
+  color: #a27bad;
 }
 
 .caption small {
   display: block;
-  margin-top: 7px;
+  margin-top: 8px;
   font: 12px 'DM Sans', sans-serif;
-  color: #ac9bb9;
+  color: #aa9ab8;
 }
 
 .note {
-  max-width: 470px;
-  margin: 28px auto 0;
-  padding: 28px 23px;
-  background: #ffffffa8;
+  max-width: 520px;
+  margin: 30px auto;
+  padding: 32px 25px;
   border: 1px solid #ffffff;
-  border-radius: 24px;
-  box-shadow: 0 12px 35px #c9afd52b;
-  animation: fadeIn 1.2s ease both;
+  border-radius: 27px;
+  background: #ffffffa8;
+  box-shadow: 0 15px 40px #c5add62c;
+  animation: fadeIn 1.3s ease both;
 }
 
 .note h2 {
   font-family: 'Playfair Display', serif;
-  color: #d18db7;
-  font-size: 27px;
-  margin-bottom: 18px;
+  font-size: clamp(26px, 5vw, 34px);
+  color: #d28bb7;
+  margin-bottom: 22px;
 }
 
 .note p {
-  font-size: 15px;
-  line-height: 1.9;
-  margin: 9px 0;
+  font-size: 16px;
+  line-height: 2;
+  margin: 10px 0;
+  color: #81718f;
 }
 
-.warning {
-  color: #a47ca9;
-  font-weight: 600;
+.signature {
+  margin-top: 23px !important;
+  font-family: 'Playfair Display', serif;
+  font-size: 23px !important;
+  color: #bc80ae !important;
 }
 
-.signoff {
-  color: #c487b1;
-  margin-top: 18px !important;
+.love {
+  margin-top: 18px;
+  font-size: 25px;
+  letter-spacing: 8px;
 }
 
-footer {
-  margin-top: 25px;
-  color: #a996b9;
+.footer {
+  margin-top: 27px;
   font-size: 12px;
+  line-height: 2;
+  color: #a692b8;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .petal {
   position: fixed;
-  top: -30px;
+  top: -35px;
   z-index: 5;
   pointer-events: none;
   animation: fall linear forwards;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(14px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 @keyframes fall {
-  to {
-    transform: translateY(110vh) rotate(360deg);
-    opacity: 0.15;
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(110vh) rotate(480deg);
+    opacity: 0.12;
   }
 }
 
 @media (max-width: 480px) {
-  main { padding-top: 32px; }
-  .bouquet { height: 310px; }
-  .note { padding: 24px 18px; }
+  main { padding-top: 35px; }
+  .bouquet { height: 330px; }
+  .note { padding: 27px 20px; }
+  .intro { font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
 </style>
 </head>
 
 <body>
 <main>
-  <p class="eyebrow">A LITTLE SUNDAY GIFT ♡</p>
 
-  <h1>Happy Sunday<br><span style="color:#d38fb7">– Funday!</span></h1>
+  <p class="eyebrow">A LITTLE GIFT FROM MY HEART ♡</p>
 
-  <p class="name">For Joel 🩵</p>
+  <h1>
+    I MISS U,<br>
+    <span>LOVE ♡</span>
+  </h1>
+
+  <p class="name">For Kallu 🩷🩵</p>
 
   <p class="intro">
-    A little bouquet to brighten your Sunday
-    and hopefully bring a smile to your face. 🌷
+    For my favourite girl, my comfort person,
+    and one of the prettiest souls in my world.
+    A little bundle of flowers just for you. 🌸
   </p>
 
   <section class="bouquet-card">
+    <!-- Save your chosen bouquet image as bouquet.jpg
+         in the same folder as this HTML file. -->
     <img
-  class="bouquet"
-  src="bouquet.png"
-  alt="Pink roses and baby-blue hydrangeas wrapped in pastel paper"
->
->
+      class="bouquet"
+      src="bouquet.jpg"
+      alt="A beautiful pastel pink and baby blue flower bouquet for Kallu"
     >
+
     <div class="caption">
-      A bouquet just for you
-      <small>Picked with a little thought and lots of affection ♡</small>
+      A bouquet for my favourite girl 💐
+      <small>A thousand flowers for a soul as lovely as yours ♡</small>
     </div>
   </section>
 
@@ -196,44 +236,69 @@ footer {
     <h2>A little note for you 💌</h2>
 
     <p>
-      May your Sundays be filled with happiness,
-      laughter, and all the little things that make you smile. 🩷
+      Girl, you are made with so much love,
+      care and a gorgeous amount of beauty. 🩷
     </p>
 
-    <p class="warning">
-      And if you continue your drinking fun every day,
-      I will finish you! 
+    <p>
+      I am forever grateful for your existence.
+      The world is a little more beautiful
+      because you're in it, and my life is
+      so much better with you in it. 🦋
     </p>
 
-    <p class="signoff">
-      Have the loveliest Sunday, Joel ♡
+    <p>
+      I wish I could give you all the flowers
+      in the world, just to remind you how
+      incredibly special you are to me. 🌷
     </p>
+
+    <p class="signature">
+      With lots of love,<br>
+      ARYA ♡
+    </p>
+
+    <div class="love">🌸 🩷 🌷 🩵 🌸</div>
   </section>
 
-  <footer>
-    Sent with flowers, affection & a tiny warning 🌸
-  </footer>
+  <p class="footer">
+    No special occasion needed to remind you that you're loved. ♡<br>
+    A little piece of my heart, just for you.
+  </p>
+
 </main>
 
 <script>
-const petals = ["🌸", "🩷", "🩵", "🌷"];
+const decorations = [
+  "🌸", "🩷", "🩵", "🌷", "💗",
+  "🌼", "💕", "🌺", "💮", "✨"
+];
 
 function createPetal() {
   const petal = document.createElement("span");
+
   petal.className = "petal";
   petal.textContent =
-    petals[Math.floor(Math.random() * petals.length)];
+    decorations[Math.floor(Math.random() * decorations.length)];
 
   petal.style.left = Math.random() * 100 + "vw";
-  petal.style.fontSize = (12 + Math.random() * 13) + "px";
-  petal.style.animationDuration = (7 + Math.random() * 6) + "s";
+  petal.style.fontSize = (14 + Math.random() * 17) + "px";
+  petal.style.animationDuration = (6 + Math.random() * 7) + "s";
 
   document.body.appendChild(petal);
-  setTimeout(() => petal.remove(), 13000);
+
+  setTimeout(() => petal.remove(), 14000);
 }
 
-setInterval(createPetal, 800);
+// A gentle shower of flowers and hearts.
+for (let i = 0; i < 12; i++) {
+  setTimeout(createPetal, i * 250);
+}
+
+setInterval(createPetal, 500);
 </script>
+
 </body>
 </html>
+
 
